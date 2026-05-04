@@ -1,4 +1,4 @@
-﻿const startDate = new Date("2026-04-18T00:00:00+03:00");
+﻿const startDate = new Date("2026-02-18T00:00:00+03:00");
 const daysEl = document.getElementById("daysTogether");
 const exactEl = document.getElementById("exactCounter");
 const button = document.getElementById("surpriseButton");
@@ -33,3 +33,4 @@ button.addEventListener("click", () => {
 
 updateCounter();
 setInterval(updateCounter, 1000);
+
