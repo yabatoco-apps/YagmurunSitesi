@@ -21,14 +21,14 @@ function updateCounter() {
   const seconds = Math.floor(diff / 1000);
 
   daysEl.textContent = days.toLocaleString("tr-TR");
-  exactEl.textContent = `${plural(days, "gün")}, ${plural(hours, "saat")}, ${plural(minutes, "dakika")}, ${plural(seconds, "saniye")} oldu.`;
+  exactEl.textContent = `${plural(days, "gün")}, ${plural(hours, "saat")}, ${plural(minutes, "dakika")}, ${plural(seconds, "saniye")} geçti.`;
 }
 
 button.addEventListener("click", () => {
   surprise.classList.toggle("hidden");
   button.textContent = surprise.classList.contains("hidden")
-    ? "Küçük bir sürpriz aç"
-    : "Sürprizi kapat";
+    ? "Saklı cümleyi aç"
+    : "Saklı cümleyi kapat";
 });
 
 updateCounter();
